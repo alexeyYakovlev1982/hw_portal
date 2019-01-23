@@ -6,17 +6,23 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h2>The Swimming Googles Shop</h2>
-    <ul class="main-menu">
-        <li><a href="./index.html">Main Page</a></li>
-        <li><a href="./catalog.html">Catalog</a></li>
-        <li><a href="./contacts.html">Contacts</a></li>
-    </ul>
+    <div class="header">
+        <img src="images/google_logo.jpg" alt="googles logo">
+        <br>
+        <h2>The Swimming Googles Shop</h2>
+        <ul class="mainMenu">
+            <li><a href="./index.html">Main Page</a></li>
+            <li><a href="./catalog.html">Catalog</a></li>
+            <li><a href="./contacts.html">Contacts</a></li>
+        </ul>
+    </div>
+
+
     <hr>
     <h1>Contacts</h1>
     <fieldset>
         <legend>Contact us</legend>
-        <form class="contacts-form" action="some_action.php" method="post">
+        <form class="contactsForm" action="contacts.html" method="post">
             <input type="text" name="username" placeholder="Your name">
             <br>
             <input type="email" name="email" placeholder="Your email">
@@ -40,7 +46,7 @@
     </p>
     <footer>
         <hr>
-        &copy;  All Rights Reserved
-</footer>
+        <div class="footer">&copy; "All rights reserved"</div>
+    </footer>
 </body>
 </html>
