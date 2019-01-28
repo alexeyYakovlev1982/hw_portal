@@ -1,210 +1,557 @@
-body {
-    background: #f8f8f8;
+@font-face {
+    font-family: "Raleway Black";
+    src: url(../fonts/Raleway-Black.ttf);
 }
 
-.container {
-    width: 960px;
-    margin: 0 auto;
+@font-face {
+    font-family: "Raleway Black Italic";
+    src: url(../fonts/Raleway-Black-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Bold";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Bold Italic";
+    src: url(../fonts/Raleway-Bold-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Extra Bold";
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Black";
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Black Italic";
+    src: url(../fonts/Roboto-Black-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbeef2+0,8fc9d4+100 */
+    background: rgb(219,238,242); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(219,238,242,1) 0%, rgb(97, 212, 90) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(219,238,242,1) 0%, rgb(88, 212, 132) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(219,238,242,1) 0%, rgb(61, 212, 99) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbeef2', endColorstr='#8fc9d4',GradientType=0 ); /* IE6-9 */
 }
 
 .header {
-    height: 125px;
+    height: 700px;
+    background: url(../images/indexBack.jpg);
+    background-size: cover;
+}
+
+.headerInside {
+    width: 1170px;
+    height: inherit;
+    margin: 0 auto;
     position: relative;
-    background: url(../images/header.jpg) no-repeat 100%;
 }
 
-.header img {
-    width: 100px;
-    margin: 10px 0 0 20px;
-}
-
-.storeName {
+.logo {
+    display: block;
+    width: 125px;
+    height: 111px;
     position: absolute;
-    top: 51px;
-    left: 144px;
-    font-size: 20px;
+    left: 69px;
+    top: 24px;
+    background: url(../images/swimgoogles_logo.jpg);
+}
+
+.welcomeWrap {
+    background-color: #faff2d;
+    width: 270px;
+    height: 300px;
+    position: absolute;
+    top: 336px;
+    padding: 82px 25px 0 25px;
+    box-sizing: border-box;
+}
+
+.welcome {
+    font-family: "Raleway Bold", sans-serif;
+    color: #333333;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.welcomeText {
+    font-family: "Raleway Bold Italic", sans-serif;
+    font-size: 18px;
+    line-height: 14px;
+    margin-top: 24px;
+    color: #333;
+}
+
+.socialIconsWrap {
+    position: absolute;
+    right: 35px;
+    top: 30px;
+    display: flex;
+    width: 145px;
+    justify-content: space-between;
+}
+
+.socialIconsWrap a {
+    text-decoration: none;
+}
+
+.socialIconsWrap i {
+    color: #fff;
+}
+
+.socialIconsWrap i:hover {
+    color: #abeafa;
+}
+
+.funrideWrap {
+    position: absolute;
+    right: 50px;
+    top: 250px;
+}
+
+.funrideHead {
+    font-family: "Raleway Extra Bold", sans-serif;
+    color: #fff51f;
+    font-size: 48px;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.funrideDesc {
+    font-family: "Raleway Regular", sans-serif;
+    color: #fff51f;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.funrideBuyBtn {
+    background-color: #fff51f;
+    width: 124px;
+    height: 49px;
+    display: block;
+    line-height: 49px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Raleway Black", sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 62px;
+}
+
+.funrideBuyBtn:hover {
+    color: #fff51f;
+    background-color: #000;
+}
+
+.content {
+    margin-top: -20px;
+}
+
+.content:after,
+.contentInside:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.contentInside {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.contentLeft {
+    width: 270px;
+    float: left;
+}
+
+.contentRight {
+    width: 870px;
+    float: right;
 }
 
 .mainMenu {
-    float: right;
-    margin-right: 15px;
+    background-color: #c384fc;
 }
 
-.mainMenu li {
-    display: inline-block;
-    padding: 0 5px;
-}
-
-.mainMenu li a {
-    color: #1f7d63;
-    font-size: 24px;
-    font-style: italic;
-    text-decoration: none;
-}
-
-.mainMenu li a:hover {
-    color: #274e7d;
-    text-decoration: underline;
-}
-
-.productHeader {
-    color: #000;
-    font-size: 18px;
-    font-weight: 400;
-    background: #eaeaea;
-}
-
-.productImgAndDesc {
-    margin-bottom: 15px;
-}
-
-.productImgAndDesc:after {
-    clear: both;
+.mainMenu a {
     display: block;
-    content: '';
-}
-
-.productImgWrap {
-    width: 16%;
-    float: left;
-}
-
-.productImgWrap a {
-    display: block;
-}
-
-.productShortDescWrap {
-    width: 82%;
-    float: right;
-}
-
-.productShortDescWrap > .productHeader {
-    margin-top: 0;
-}
-
-.productShortDescription {
-    color: #707070;
+    height: 43px;
+    line-height: 43px;
+    text-transform: uppercase;
+    font-family: "Roboto Black", sans-serif;
     font-size: 14px;
-    font-style: italic;
-    line-height: 16px;
-}
-
-.productBuyBtn {
-    float: right;
-    padding: 15px 25px;
+    color: #000;
     text-decoration: none;
-    border-radius: 4px;
-    font-family: sans-serif;
-    color: #274e7d;
-    font-weight: bold;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f6f8+0,d8e1e7+50,b5c6d0+51,e0eff9+100;Grey+Gloss+%232+++ */
-    background: rgb(242,246,248); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 ); /* IE6-9 */
+    padding: 0 40px;
 }
 
-.productBuyBtn:hover {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dee1e2+0,d8e1e7+50,b5c6d0+51,cedce5+100 */
-    background: rgb(222,225,226); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(222,225,226,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(206,220,229,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(222,225,226,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(206,220,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(222,225,226,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(206,220,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee1e2', endColorstr='#cedce5',GradientType=0 ); /* IE6-9 */
-}
-
-.productBuyBtn:active {
-    color: #528426;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2ff52+0,91e842+100;Neon */
-    background: rgb(210,255,82); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 ); /* IE6-9 */
-
-}
-
-.productFullDescription {
-    color: #484343;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.productFeatures {
-    color: #274e7d;
-    font-size: 20px;
-    font-style: italic;
-    border-collapse: collapse;
-}
-
-.productFeatures td {
-    border: 1px solid black;
-}
-
-.productShortDescription:first-letter,
-.productFullDescription:first-letter {
-    color: #274e7d;
-    font-family: Arial, sans-serif;
-    font-size: 30px;
-}
-
-.catalogProductsWrap:after {
-    display: block;
-    clear: both;
-    content: '';
-}
-
-.catalogProductUnit {
-    width: 22%;
-    float: left;
-    margin-right: 4%;
-    outline: 1px solid #ccc;
-}
-
-.catalogProductUnit:nth-child(n+5) {
-    margin-top: 35px;
-}
-
-.catalogProductUnit:nth-child(4n) {
-    margin-right: 0;
-}
-
-.contactsForm input[type="text"],
-.contactsForm input[type="email"] {
-    width: 400px;
-    height: 30px;
-    color: #274e7d;
-    font-size: 20px;
-    text-transform: capitalize;
-}
-
-.contactsForm input[type="email"]:focus {
-    background: #274e7d;
+.mainMenu a:first-child {
+    height: 66px;
+    background: #333;
     color: #fff;
+    line-height: 66px;
+}
+
+.mainMenu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.nowIsOpen {
+    margin-top: 30px;
+    height: 300px;
+    border: 10px solid white;
+    box-sizing: border-box;
+}
+
+.nowIsOpenInside {
+    width: 100%;
+    height: 100%;
+}
+
+.nowIsOpen span {
+    font-family: "Raleway Black Italic", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    position: relative;
+    top: 129px;
+    left: 142px;
+    color: #333;
+}
+
+.contentHeader {
+    height: 78px;
+    line-height: 78px;
+    padding: 0 25px;
+    background: #f8f8f8;
+    font-family: "Roboto Black Italic", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #707070;
+    margin-bottom: 30px;
+}
+
+.productsWrap {
+    margin-bottom: 30px;
+}
+
+.saleProducts {
+    margin-bottom: 0;
+}
+
+.productsWrap:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.productUnit {
+    background-color: #ffffff;
+    width: 270px;
+    height: 320px;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.productUnit:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.productUnit:nth-child(n+4) {
+    margin-top: 30px;
+}
+
+.productUnitNew:before,
+.productUnitHot:before {
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 9px;
+    color: #fff;
+    padding: 9px 0 0 22px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.productUnitNew:before {
+    content: "NEW";
+    background: url(../images/new-corner.png) no-repeat;
+}
+
+.productUnitHot:before {
+    content: "HOT";
+    background: url(../images/hot-corner.png) no-repeat;
 }
 
 .productImg {
     width: 100%;
-    border: 4px solid #274e7d;
+    height: 235px;
+    margin-bottom: 19px;
+}
+
+.productName {
+    width: 155px;
+    font-family: "Roboto Black Italic", sans-serif;
+    font-size: 14px;
+    color: #333;
+    float: left;
+    max-height: 2.4em;
+    overflow: hidden;
+}
+
+.productPriceWrap {
+    float: right;
+    font-family: "Roboto Black Italic", sans-serif;
+    color: #333;
+    text-align: right;
+}
+
+.actualPrice {
+    font-size: 18px;
+}
+
+.oldPrice {
+    color: #e24602;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.brands {
+    position: relative;
+    top: 30px;
+    clear: both;
+    height: 160px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
     box-sizing: border-box;
 }
 
-.productImg:hover {
-    border-color: transparent;
+.istagramFeedWrap {
+    height: 350px;
+    background-color: #eaeaea;
+    padding-top: 50px;
+    box-sizing: border-box;
 }
 
-.catalogImg {
+.instaFeedHead {
     width: 100%;
-    height: 200px;
-    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Roboto Black Italic", sans-serif;
+}
+
+.instaFeedHead i {
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+
+.instaFeedHead span {
+    font-size: 22px;
+}
+
+.instaFeedImages {
+    margin-top: 29px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.instaFeedImages img {
+    border: 8px solid #fff;
+    box-sizing: border-box;
+}
+
+.socialButtonsWrap {
+    height: 150px;
+    display: flex;
+}
+
+.socialButtonsWrap a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%/3);
+    height: inherit;
+    text-decoration: none;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.socialButtonsWrap a:nth-child(1) {
+    background-color: #3b5997;
+}
+
+.socialButtonsWrap a:nth-child(2) {
+    background-color: #3fccfd;
+}
+
+.socialButtonsWrap a:nth-child(3) {
+    background-color: #cb2027;
 }
 
 .footer {
-    background: rgba(39, 78, 125, 0.46);
-    height: 100px;
-    text-align: right;
-    padding: 10px 10px 0 0;
-    font-weight: bold;
+    background-color: #373737;
+    color: #fff;
+}
+
+.footerInside {
+    width: 1170px;
+    margin: 0 auto;
+    min-height: 343px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    box-sizing: border-box;
+}
+
+.columnHead {
+    font-family: "Raleway Extra Bold", sans-serif;
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.columnLinks a {
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 12px;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.newsLetter {
+    width: 270px;
+}
+
+.columnNewsLetter {
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 12px;
+}
+
+.newsLetterText {
+    margin-bottom: 31px;
+}
+
+.columnNewsLetter input {
+    background-color: #fff51f;
+    width: 180px;
+    height: 30px;
+    outline: none;
+    border: none;
+    padding: 0 5px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.columnNewsLetter button {
+    width: 71px;
+    height: 30px;
+    background: #000;
+    color: #fff;
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 0;
+    outline: none;
+}
+
+.columnNewsLetter button:hover {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.cardsWrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.about {
+    width: 232px;
+    font-family: "Roboto Regular", sans-serif;
+}
+
+.aboutText {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.aboutPhone {
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+.aboutPhone span,
+.aboutEmail span {
+    margin-right: 10px;
+}
+
+.aboutEmail {
+    margin-top: 14px;
+    color: #faef03;
+    font-size: 14px;
+}
+
+.footerCopyrights {
+    height: 47px;
+    background: #333;
+    line-height: 47px;
+}
+
+.copyrightsInside {
+    width: 1170px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+.footerCopySign {
+    float: left;
+    font-size: 12px;
+    font-family: "Roboto Regular", sans-serif;
+}
+
+.footerSocials {
+    height: inherit;
+    float:right;
+    width: 178px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
