@@ -1,165 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>The Swimming Googles Shop</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="packages/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="packages/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+<div class="header">
     <div class="container">
-        <div class="header">
-            <div class="headerInside">
-                <a href="#" class="logo"></a>
-                <div class="welcomeWrap">
-                    <div class="welcome">
-                        Welcome here
-                    </div>
-                    <div class="welcomeText">
-                        The only proper store<br>
-                        you ever need for swimming<br>
-                    </div>
-                </div>
-                <div class="socialIconsWrap">
-                    <a href="#">
-                        <i class="fab fa-facebook-f fa-lg"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-twitter fa-lg"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-youtube fa-lg"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-pinterest fa-lg"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram fa-lg"></i>
-                    </a>
+        <nav class="navbar navbar-default xsNavBar visible-xs">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand xsLogo" href="#">Swimstore</a>
                 </div>
 
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Menu</a>
+                        <li><a href="#">About</a>
+                        <li><a href="#">Swim Googles</a>
+                        <li><a href="#">Accessories</a>
+                        <li><a href="#">Sale</a>
+                        <li><a href="#">Brands</a>
+                        <li><a href="#">Blog</a>
+                        <li><a href="#">Contact</a>
+                    </ul>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <a href="#" class="logo hidden-xs">Swimstore</a>
+        <div class="welcomeWrap">
+            <div class="welcome">
+                Welcome to Swimstore
+            </div>
+            <div class="welcomeText">
+                The only proper store<br>
+                you ever need for swimming<br>
             </div>
         </div>
+        <div class="socialIconsWrap">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</div>
 
-        <div class="content">
-            <div class="contentInside">
-                <div class="contentLeft">
-                    <div class="mainMenu">
-                        <a href="#">Menu</a>
-                        <a href="#">About</a>
-                        <a href="#">Swim Googles</a>
-                        <a href="#">Accessories</a>
-                        <a href="#">Sale</a>
-                        <a href="#">Brands</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact</a>
-                    </div>
-                    <div class="nowIsOpen">
-                        <div class="nowIsOpenInside">
+<div class="container content">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-4">
+            <ul class="hidden-xs mainMenu">
+                <li><a href="#">Menu</a>
+                <li><a href="#">About</a>
+                <li><a href="#">Swim Googles</a>
+                <li><a href="#">Accessories</a>
+                <li><a href="#">Sale</a>
+                <li><a href="#">Brands</a>
+                <li><a href="#">Blog</a>
+                <li><a href="#">Contact</a>
+            </ul>
+            <div class="nowIsOpen">
+                <div class="nowIsOpenInside">
                             <span>
                                 Now<br>
                                 is<br>
                                 open!
                             </span>
-                        </div>
-                    </div>
                 </div>
-                <div class="contentRight">
-                    <div class="contentHeader">
-                        New products
-                    </div>
-                    <div class="productsWrap">
-                        <div class="productUnit productUnitNew">
-                            <img class="productImg" src="images/products/Zoggs-Predator-Flex-Polarised-Ultra-Goggle.jpg" alt="surf1">
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-8">
+            <div class="contentHeader newProductsHeader">
+                New products
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 productUnitCol">
+                    <div class="productUnit">
+                        <div class="productCornerNew">new</div>
+                        <img class="productImg" src="images/products/Zoggs-Predator-Flex-Polarised-Ultra-Goggle.jpg" alt="swim1">
+                        <div class="nameAndPriceWrap">
                             <div class="productName">
                                 Zoggs Predator Flex Polarised Ultra Goggle
                             </div>
                             <div class="productPriceWrap">
                                 <div class="actualPrice">
-                                    &euro; 20.00
+                                    &euro;&nbsp;40
                                 </div>
                             </div>
                         </div>
-                        <div class="productUnit productUnitHot">
-                            <img class="productImg" src="images/products/Arena-Cobra-Ultra-Goggle.jpg" alt="surf2">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 productUnitCol">
+                    <div class="productUnit">
+                        <div class="productCornerHot">hot</div>
+                        <img class="productImg" src="images/products/Arena-Cobra-Ultra-Goggle.jpg" alt="swim2">
+                        <div class="nameAndPriceWrap">
                             <div class="productName">
                                 Arena Cobra Ultra Goggle
                             </div>
                             <div class="productPriceWrap">
                                 <div class="actualPrice">
-                                    &euro; 23
+                                    &euro;&nbsp;40
                                 </div>
                                 <div class="oldPrice">
-                                    &euro; 30
+                                    &euro;&nbsp;30
                                 </div>
                             </div>
                         </div>
-                        <div class="productUnit">
-                            <img class="productImg" src="images/products/Speedo-Vue-Mirror-Goggle.jpg" alt="surf3">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 productUnitCol">
+                    <div class="productUnit">
+                        <img class="productImg" src="images/products/Speedo-Vue-Mirror-Goggle.jpg" alt="swim3">
+                        <div class="nameAndPriceWrap">
                             <div class="productName">
                                 Speedo Vue Mirror Goggle
                             </div>
                             <div class="productPriceWrap">
                                 <div class="actualPrice">
-                                    &euro; 35
+                                    &euro;&nbsp;1,580.70
                                 </div>
-
                             </div>
                         </div>
-                     </div>
-
-                    <div class="contentHeader">
-                        Sale products
                     </div>
-                    <div class="productsWrap saleProducts">
-                        <div class="productUnit">
-                            <img class="productImg" src="images/products/Arena-Cobra-Ultra-Goggle.jpg"
-                                 alt="rashguard">
+                </div>
+
+            </div>
+
+            <div class="contentHeader">
+                Sale products
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 productUnitCol">
+                    <div class="productUnit">
+                        <img class="productImg" src="images/products/Arena-Cobra-Ultra-Goggle.jpg"
+                             alt="rashguard">
+                        <div class="nameAndPriceWrap">
                             <div class="productName">
                                 Arena Cobra Ultra Goggle
                             </div>
                             <div class="productPriceWrap">
                                 <div class="actualPrice">
-                                    &euro; 23
+                                    &euro;&nbsp;40
                                 </div>
                                 <div class="oldPrice">
-                                    &euro; 30
+                                    &euro;&nbsp;30
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="brands">
-                    <img src="images/brands/aqua_sphere.jpg" alt="">
-                    <img src="images/brands/arena.jpg" alt="">
-                    <img src="images/brands/Speedo.png" alt="">
-                </div>
-                <div class="istagramFeedWrap">
-                    <div class="instaFeedHead">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram:</span>
-                    </div>
-                    <div class="instaFeedImages">
-                        <img src="images/insta/1.jpg" alt="">
-                        <img src="images/insta/2.jpg" alt="">
-                        <img src="images/insta/3.jpg" alt="">
-                        <img src="images/insta/4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="socialButtonsWrap">
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-pinterest"></i>
-                    </a>
-                </div>
             </div>
         </div>
-        <div class="footer">&copy; "All rights reserved"</div>
     </div>
+    <div class="row">
+        <div class="container-fluid">
+            <div class="brands">
+                <img src="images/brands/aqua_sphere.jpg" alt="">
+                <img src="images/brands/arena.jpg" alt="">
+                <img src="images/brands/Speedo.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="instagramFeedWrap">
+        <div class="instaFeedHead">
+            <i class="fa fa-instagram"></i>
+            <span>Instagram feed:</span> #swimstore
+        </div>
+        <div class="instaFeedImages">
+            <img src="images/insta/1.jpg" alt="">
+            <img src="images/insta/2.jpg" alt="">
+            <img src="images/insta/3.jpg" alt="">
+            <img src="images/insta/4.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="socialButtonsWrap">
+        <a href="#">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-pinterest"></i>
+        </a>
+    </div>
+</div>
+<div class="footerCopyrights">
+    <div class="container copyrightsInside">
+        <div class="footerCopySign">
+            &copy; 2014  swimstore. All rights reserved <span class="hidden-xs"></span><br class="visible-xs">
+        </div>
+        <div class="footerSocials">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-pinterest-p"></i>
+            <i class="fa fa-google-plus"></i>
+            <i class="fa fa-tumblr"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-feed"></i>
+        </div>
+    </div>
+</div>
+
+<script src="packages/jquery/jquery-1.12.4.min.js"></script>
+<script src="packages/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
